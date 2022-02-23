@@ -16,8 +16,8 @@
 最終版本的組成(primary assembly)包含chr1-22,X,Y,MT(mitochondria DNA)以及下面幾種序列分類：
 
 > unlocalized sequences：知道来自哪條染色體但不知道具體位置的序列，常以_random命名表示
-unplaced sequences：知道来自人類基因组序列，但不知道與染色體的關係，常以chrU_命名表示
-alternate loci：来自基因组特定區域，代表該區域序列的多樣性，常以_alt命名表示
+> unplaced sequences：知道来自人類基因组序列，但不知道與染色體的關係，常以chrU_命名表示
+> alternate loci：来自基因组特定區域，代表該區域序列的多樣性，常以_alt命名表示
 
 * 補充1：
 GRCh37還有版本更新，以下提供NCBI紀錄的出版及最新版的序列，其中GRCh37.p13的p代表補綴(patch)是指序列更新的過程並沒有更動染色體座標、僅修改部分序列資訊，因此不用重新命名成另一版本。  
