@@ -51,21 +51,17 @@ GRCh37還有版本更新，以下提供NCBI紀錄的出版及最新版的序列�
 ### humanG1Kv37（hs37d5）
 
 * 檔案名稱：
-   * 不包含decoy: human_g1k_v37.fasta 
-   * 包含decoy: hs37d5.fa
+   * 不包含decoy: human_g1k_v37.fasta
+   * 包含decoy: hs37d5.fa, human_g1k_v37_decoy.fasta
 * 版本說明：是由 1000 genomes Project 所完成的版本，相當於b37版本，不同之處在於此版有包含或不包含 [decoy sequence](https://www.ncbi.nlm.nih.gov/nuccore/NC_007605) (human herpesvirus 4 type 1)兩種。
 
 ### 使用心得
-目前研究多使用hs37d5作為參考序列，因在後續分析有最高的準確度，這說明了加上decoy seuence後能增加序列比對的數量。
+目前研究多使用hs37d5作為參考序列，因在後續分析有最高的準確度，這說明了加上decoy sequence後能增加序列比對的數量。
 
 ## GRCh38/hg38版本發展與差異
 
 * 發行時間：2013年
-* 版本說明：和GRCh37版本相比，因定序處理的技術提升，定出資訊更多，如 exon region, SNV and InDels等；GRCh38也試著做annotation of the centromere regions. 
-
-![](https://i.imgur.com/sqfEIig.png)
-
-而UCSC Genome Browser為了避免過往版本號碼不一致 (GRCh37 vs. hg19)造成混淆，變將其版本號碼跳動至hg38，和GRCh38可相通（但仍需座標轉換）。
+* 版本說明：和GRCh37版本相比，因定序處理的技術提升，能定序及修正更多區域，如 exon region, SNV and InDels等；GRCh38也試著做annotation of the centromere regions。而UCSC Genome Browser為了避免過往版本號碼不一致 (GRCh37 vs. hg19)造成混淆，也將其版本號碼跳動至hg38，和GRCh38可相通（但GRCh38/hg38間仍需座標轉換）。
 
 * 補充：
 GRCh38還有版本更新，NCBI紀錄
@@ -73,6 +69,11 @@ GRCh38還有版本更新，NCBI紀錄
 [GRCh38.p13](https://www.ncbi.nlm.nih.gov/assembly/GCF_000001405.39/) (2019)
 
 ### 與GRCh37/hg19版的差異
+
+*  最大的差異在於alternative haplotype資訊，為了使參考序列具有全人類的代表性，擴增族群資料可增進序列的多元性，也提升序列比對率，這些資訊主要記錄在ALT contigs中。  
+*  GRCh38版多了HLA typing的序列，免疫基因對於疾病研究相當重要，HLA資訊提升了參考序列的完整度。  
+*  除了序列擴增，GRCh38也嘗試修正參考序列；過去定序技術的限制而導致定序錯誤或無法定序的情況，主要透過新的定序計畫如 1000 Genomes Project協助修正外，也修正了GRCh37/hg19版內含有的false SNPs and indels。  
+
 ### GRCh38/hg38版本間的差異 
 
 |    version    |           GATK           |              Illumina                | bwakit |              1000 Genome              |                         NCBI                         |
